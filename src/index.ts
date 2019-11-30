@@ -21,7 +21,7 @@ const cities = uniqBy(sortedCities,(x => x.name));
 // get weather data by city name
 async function getWeather(location: string): Promise<WeatherData> {
 try {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=39544be17cca6159f6a15f96ee121005`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=39544be17cca6159f6a15f96ee121005`);
     const responseJson = await response.json();
 
     return {
@@ -38,7 +38,7 @@ try {
 // get weather data by coordinates
 async function getWeatherByLocation(lat: number, lon: number): Promise<WeatherData> {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=39544be17cca6159f6a15f96ee121005`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=39544be17cca6159f6a15f96ee121005`);
         const responseJson = await response.json();
 
         return {
