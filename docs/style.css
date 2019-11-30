@@ -1,0 +1,57 @@
+
+
+  .container {
+    padding: 2rem;
+}
+/*
+html {
+    background: url('background-image.jpeg') no-repeat center bottom fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+*/
+
+body {
+    display: flex;
+    background-image: url('background-image.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 100vh;
+    justify-content: center;
+    color: rgb(100, 100, 100);
+}
+
+.main {
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.65);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.date {
+    display: inline-block;
+}
+
+.weather-data {
+    color: black;
+}
+
+.main > * {
+    margin-bottom: 1rem;
+}
+
+.weather-data h4 {
+    margin: 0;
+}
+
+.weather-data > div {
+    margin: 1rem;
+}
+
+#city-search {
+    flex-shrink: 0;
+}
