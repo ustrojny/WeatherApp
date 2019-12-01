@@ -9,24 +9,28 @@
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
-  <script src="main.js" defer></script>
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/94b6661118.js" crossorigin="anonymous"></script>
+  <!-- JS file-->
+  <script src="main.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="Weather App">
+  <meta name="keywords" content="Weather, geolocation, API">
+  <meta name="author" content="Urszula Strojny">
 </head>
 
 <body>
   <div class="main">
     <h1>Sprawdź aktualną pogodę</h1>
-    <div id="date" class="date"><i class="fas fa-spinner fa-pulse"></i></div>
+    <div id="date" class="date"><i class="fas fa-lg fa-spinner fa-pulse"></i></div>
     <button class="uk-button uk-button-primary" id="locationBtn">Pobierz pogodę dla swojej lokalizacji</button>
-
     <label for="cities-list">Lub wybierz miasto:</label>
-    <input list="cities" id="city-search" name="cities-list" class="search uk-input uk-form-width-medium" placeholder="Wyszukaj" />
+    <input list="cities" id="city-search" name="cities-list" class="search uk-input uk-form-width-medium"
+      placeholder="Wyszukaj" />
     <datalist id="cities">
       <option class="suggestion"></option>
     </datalist>
-
-
     <div class="weather-data">
       <div id="loading"></div>
       <div id="icon"></div>
@@ -34,7 +38,6 @@
       <div id="humidity"></div>
       <div id="pressure"></div>
     </div>
-
   </div>
 </body>
 
